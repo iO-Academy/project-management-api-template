@@ -271,3 +271,45 @@ This API only supports GET requests.
 
     * **Code:** 500 SERVER ERROR <br />
       **Content:** `{"message": "Unexpected error", "data": []}`
+
+### Returns all clients
+
+* **URL**
+
+  /clients.php
+
+* **Method:**
+
+  `GET`
+
+* **URL Params**
+
+  There are no URL parameters for this route
+
+* **Success Response:**
+
+    * **Code:** 200 <br />
+      **Content:** <br />
+
+  ```json
+  {
+  "message": "Successfully retrieved clients",
+  "data": [
+    {
+      "id": "1",
+      "name": "Yadel",
+      "logo": "http://dummyimage.com/200x200.png/ff4444/ffffff"
+    },
+    {
+      "id": "2",
+      "name": "Tagfeed",
+      "logo": null
+    }
+  ]
+  }
+  ```
+
+* **Error Response:**
+
+    * **Code:** 500 SERVER ERROR <br />
+      **Content:** `{"message": "Unexpected error", "data": []}`
